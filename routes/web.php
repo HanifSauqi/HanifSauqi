@@ -17,6 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-use App\Http\Controllers\AboutController;
+// use App\Http\Controllers\AboutController;
 
-Route::get('/about', [AboutController::class, 'index']);
+// Route::get('/about', [AboutController::class, 'index']);
+
+Route::get('/about', function () {
+    return view('about',[
+        "name" => "hanifsauqi",
+        "email" => "hanifsauqi@gmail.com",
+        "nohp" => "098567349876",
+        "alamat" => "Yogyakarta"
+    ]);
+});

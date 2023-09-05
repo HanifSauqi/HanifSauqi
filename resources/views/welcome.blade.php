@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-        <a href="/about">Link ke about</a>
+        <a href="about">Link ke about</a>
     </div>
 </body>
 </html>
