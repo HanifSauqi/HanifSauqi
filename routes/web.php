@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BukuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,9 @@ Route::get('/', function () {
 
 // Route::get('/about', [AboutController::class, 'index']);
 
+
+Route::get('/buku', [BukuController::class, 'index']);
+
 Route::get('/about', function () {
     return view('about',[
         "name" => "hanifsauqi",
@@ -29,3 +33,10 @@ Route::get('/about', function () {
         "alamat" => "Yogyakarta"
     ]);
 });
+
+// Route::get('/buku', 'BukuController@index');
+ 
+// Route::controller(OrderController::class)->group(function () {
+//     Route::get('/orders/{id}', 'show');
+//     Route::post('/orders', 'store');
+// });
