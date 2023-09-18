@@ -27,5 +27,7 @@
             @endforeach
         </tbody>
     </table>
+    <p>Jumlah data yang dimiliki: {{ $jumlah_data }}</p>
+    <p>Total Harga Semua Buku: {{ "Rp ".number_format($total_harga, 2, ',','.') }}</p>
 </body>
 </html>
