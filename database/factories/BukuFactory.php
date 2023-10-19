@@ -17,11 +17,11 @@ class BukuFactory extends Factory
     public function definition(): array
     {
         return [
-            'id'=>$this->faker->unique()->randomNumber(),
-            'judul'=>$this->faker->title(),
-            'penulis'=>$this->faker->name(),
-            'harga'=>$this->faker->randomNumber(),
-            'tgl_terbit'=>$this->faker->date()
+            'id' => $this->faker->unique()->randomNumber(),
+            'judul' => $this->faker->title(),
+            'penulis' => $this->faker->name(),
+            'harga' => $this->faker->randomNumber(),
+            'tgl_terbit' => $this->faker->date()
             //
         ];
     }

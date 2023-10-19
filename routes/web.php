@@ -7,6 +7,7 @@ use App\Http\Controllers\BukuController;
 Route::get('/', function () {
     return view('welcome',);
 });
+
 Route::get('/perumahan',[PerumahanControllers::class,'listRumah']);
 
 
